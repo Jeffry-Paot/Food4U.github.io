@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-4-U</title>
+    <link rel="icon" href="IMG/logo.png">
+    <script src="https://kit.fontawesome.com/b58a891967.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startTime()">
+  <div class="Contenedor">
+    <section id="Inicio">
+        <div class="Logo">
+            <img src="IMG/logo.png" alt="Logo">
+        </div>
+        <div class="Login">
+            <div class="Nombre">
+                <h1>Food 4 U</h1>
+            </div>
+            <div class="Cont">
+                <input type="button" id="login" value="Login" onclick="mostrarFormulario();"></button>
+                <div id="formulario">
+                    <FORM name=form action="Login.HTML">
+                    
+                    <P>Usuario:    <INPUT type=text name=login required style="border-radius: 4px;border-style: none;"> 
+                    <P>Contraseña: <INPUT type=password name=password required style="border-radius: 4px;border-style: none;"> 
+                    <INPUT type=submit value=Enviar style="padding: 6px;border-radius: 4px;;background-color: #DBDBDB;">
+                    
+                    </FORM> 
+                </div>
+            </div>            
+        </div>
+        <div class="Reservacion">
+            <button id="Reservar" onclick="mostrarReservacion();">Reservar</button>
+            <div id="Reservacion">
+                <FORM name=form action="Reservacion.HTML">
+                  
+                  <P>Numero de personas:    <INPUT type=number name=numero value=1 required style="border-radius: 4px;border-style: none; padding: 4px;margin-bottom: 10px;;"> 
+                  <P>Fecha de reservación: <INPUT type=date name=Fecha required style="border-radius: 4px;border-style: none; padding: 4px;margin-bottom: 10px"> 
+                  <P>Hora:    <INPUT type=time name=Hora required style="border-radius: 4px;border-style: none; padding: 4px;margin-bottom: 10px;"> <br>
+                  <INPUT type=submit value=Enviar style="padding: 6px;border-radius: 4px;;background-color: #DBDBDB; border-style: none;">
+                  
+                </FORM> 
+            </div>
+          </div>
+    </section>
+    <aside>
+    <div id="Carrusel">
+      <div class="wrapper">
+        <div class="outer">
+          <div class="card" style="--delay:-2;">
+            <div class="content">
+              <div class="img"><img src="#" alt=""></div>
+              <div class="details">
+                <span class="name">Reconocimientos</span>
+                <p>El producto mas famoso del restaurante es una Hamburguesa Chitta, la cual ha
+                  ganado reconocimientos en diversas convenciones internacionales tales como:
+                  <p class="Reconocimientos">
+                  - Manhathan 1999- The best gourmet Burger, first place<br>
+                  - Stn Lucia 2001- Th royal preference, second place<br>
+                  - Bogota, Colombia 2001- La Delicia de Bogota, primer lugar.<br>
+                  - Madrid, España 2004- La mejor hamburguesa gourmet<br>
+                  - Buenos Aires- Argentina 2006 – Champio of all tasted<br>
+                  - New york, Estados Unidos 2010- The royal Hamburguer<br>
+                  - Texas, Estados Unidos 2016- Favorite flavore</p></p>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="--delay:3;">
+            <div class="content">
+              <div class="img"><img src="#" alt=""></div>
+              <div class="details">
+                <span class="name">Historia</span>
+                <p>Food4U fue fundado en Bogota Colombia en el año 1988 por Don Armando Lattini,
+                    un italiano que junto a su esposa Phati Hodsong de procedencia Americana
+                    decidieron traer a la población colombiana los sabores de ambas tierras,
+                    combinando asi la comida rápida a un estilo Italiano.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    </aside>
+    <section id="Producto">
+        <div class="Menu">
+            <h2>Menú</h2>
+        </div>
+        <div class="Imagen_1">
+            <img src="IMG/Bread2.png" alt="Bread">
+        </div>
+        <div class="Imagen_2">
+            <img src="IMG/coffee1.png" alt="Coffee">
+        </div>
+        <div class="Imagen_3">
+            <img src="IMG/pizza1.png" alt="Pizza">
+        </div>
+        <div class="Imagen_4">
+            <img src="IMG/sandwich1.png" alt="Sandwich">
+        </div>
+    </section>
+    <section id="Info">
+        <div class="Botones">
+            <button type="button" class="Vision" onclick="mostrarVision();">Visión</button>
+            <button type="button" class="Mision" onclick="mostrarMision();">Misión</button>
+            <button type="button" class="Valores" onclick="mostrarValores();">Valores</button>
+            <button type="button" class="Contacto" onclick="mostrarContacto();">Contáctanos</button>
+        <div id="Vision">
+            <p>Nuestra visión a futuro es ayudar a crear una localidad más saludable,
+                más consciente sobre su nutrición, y que nuestra ciudad tenga una opción
+                confiable y de bajo costo para comer bien, sin sacrificar el placer de comer.</p>
+        </div>
+        <div id="Mision">
+            <p>Satisfacer las necesidades gastronómicas de nuestros clientes, ofreciendo
+                alimentos y servicios con la más alta calidad, donde se sobrepasen las
+                expectativas de nuestros clientes y ser un espacio de trabajo que permita la
+                realización personal y el Desarrollo de sus colaboradores en el grupo.</p>
+        </div>
+        <div id="Valores">
+            <p>Honestidad | Confianza | Firmeza | Responsabilidad | Liderazgo</p>
+        </div>
+        <div id="Contacto">
+          <div id="contenedor">
+            <div>
+              <p>
+                <a href="http://Facebook.com" target="_blank">Facebook</a>
+                <a href="http://Instagram.com" target="_blank">Instagram</a>
+                <a href="http://Twitter.com" target="_blank">Twitter</a>
+              </p>
+            </div>
+            <div>
+              <p><a href="https://www.google.es/maps/place/Bogot%C3%A1,+Colombia"><i class="fa-solid fa-location-dot"></i> Cl. 70a #10a-18, Bogotá, Colombia</a>
+                <i class="fa-solid fa-phone"></i> +57 (031) 2487073
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="Calendario">
+            <div id="clockdate" onload="startTime()">
+              <div class="clockdate-wrapper">
+                <div id="clock"></div>
+                <div id="date"></div>
+              </div>
+            </div>
+            <p align="center"><b><font size="5"></font>
+              <SCRIPT LANGUAGE="JavaScript">
+                function montharray(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+                {
+                   this[0] = m0;
+                   this[1] = m1;
+                   this[2] = m2;
+                   this[3] = m3;
+                   this[4] = m4;
+                   this[5] = m5;
+                   this[6] = m6;
+                   this[7] = m7;
+                   this[8] = m8;
+                   this[9] = m9;
+                   this[10] = m10;
+                   this[11] = m11;
+                }
+                
+                function MakeArray(n) {this.length = n; return this;}
+                  var Days = new MakeArray(7);
+                  var Months = new MakeArray(12);
+                  Days[1]="Domingo"; Days[2]="Lunes"; Days[3]="Martes";   Days[4]="Miércoles";
+                  Days[5]="Jueves"; Days[6]="Viernes"; Days[7]="Sábado";
+                  Months[1]="Enero"; Months[2]="Febrero"; Months[3]="Marzo";   Months[4]="Abril"; 
+                  Months[5]="Mayo"; Months[6]="Junio"; Months[7]="Julio";   Months[8]="Agosto"; 
+                  Months[9]="Septiembre"; Months[10]="Octubre"; Months[11]="Noviembre"; 
+                  Months[12]="Diciembre";
+                
+                  function getNiceDate(theDate) {
+                  return Days[theDate.getDay()+1] + " " + theDate.getDate() + " " +
+                  Months[theDate.getMonth()+1] + " " + theDate.getYear(); }
+                
+                
+                function calendar()
+                {
+                   today = new Date();
+                   var thisDay;
+                   var monthNames = "JanFebMarAprMayJunJulAugSepOctNovDec";
+                   var monthNames2 = " 1 2 3 4 5 6 7 8 9101112";
+                   var monthDays = new montharray(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+                   year = today.getFullYear();
+                   if(year<2000)year+=1900;
+                   thisDay = today.getDate();
+                   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+                      monthDays[1] = 29;
+                   nDays = monthDays[today.getMonth()];
+                   firstDay = today;
+                   firstDay.setDate(1);
+                   var lastMod = new Date();
+                   startDay = firstDay.getDay();
+                   document.write("<TABLE BORDER=\"4\" CELLPADDING=\"6\">");
+                   document.write("<TR><TH COLSPAN=7>");
+                   document.write(getNiceDate(lastMod));
+                   document.write("<TR><TH>Dom<TH>Lun<TH>Mar<TH>Mie<TH>Jue<TH>Vie<TH>Sáb");
+                   document.write("<TR>");
+                   column = 0;
+                   for (i=0; i<startDay; i++)
+                   {
+                      document.write("<TD>");
+                      document.write("<CENTER>");
+                      document.write("&nbsp");
+                      column++;
+                   }
+                   for (i=1; i<=nDays; i++)
+                   {
+                      document.write("<TD>");
+                      if (column == 0) 
+                         document.write("<FONT COLOR=\"green\">");
+                      if (column == 6) 
+                         document.write("<FONT COLOR=\"green\">");               
+                      if (i == thisDay)
+                         document.write("<FONT COLOR=\"blue\"><b>");
+                      document.write("<center>");
+                      document.write(i);
+                      document.write("</center>");
+                      if (i == thisDay)
+                         document.write("</b>")
+                      if (column == 7||column == 0||i == thisDay) 
+                         document.write("</FONT>")
+                      column++;
+                      if (column == 7)
+                      {
+                         document.write("<TR>");
+                         column = 0;
+                      }
+                   }
+                   document.write("</TABLE>");
+                }
+                </SCRIPT>
+                </b></p>
+                <SCRIPT LANGUAGE="JavaScript">
+                    calendar();
+                </SCRIPT>
+                
+          </div>
+    </section>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
